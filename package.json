@@ -32,5 +32,8 @@
   },
   "devDependencies": {
     "nodemon": "^2.0.21"
+  },
+  "bin": {
+    "apollo-skeleton": "src/index.js"
   }
 }
