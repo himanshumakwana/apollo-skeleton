@@ -3,9 +3,12 @@
   "version": "1.0.0",
   "description": "This is cli util used for create apollo subgraph and supergraph skeleton",
   "main": "src/index.js",
+  "type": "module",
   "scripts": {
     "dev": "nodemon --watch src/index.js --watch src/scripts/init.sh",
-    "start": "node src/index.js"
+    "start": "node src/index.js",
+    "publish:canary": "chmod +x scripts/publish-canary.sh && scripts/publish-canary.sh",
+    "publish:patch": "chmod +x scripts/patch.sh && scripts/patch.sh"
   },
   "repository": {
     "type": "git",
