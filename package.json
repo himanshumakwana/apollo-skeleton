@@ -1,0 +1,33 @@
+{
+  "name": "apollo-skeleton",
+  "version": "1.0.0",
+  "description": "This is cli util used for create apollo subgraph and supergraph skeleton",
+  "main": "src/index.js",
+  "scripts": {
+    "dev": "nodemon --watch src/index.js --watch src/scripts/init.sh",
+    "start": "node src/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/himanshumakwana/apollo-skeleton.git"
+  },
+  "keywords": [
+    "apollo",
+    "apollo-subgraph",
+    "apollo-supergraph",
+    "skeleton"
+  ],
+  "author": "Himanshu makwana",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/himanshumakwana/apollo-skeleton/issues"
+  },
+  "homepage": "https://github.com/himanshumakwana/apollo-skeleton#readme",
+  "dependencies": {
+    "chalk": "^5.2.0",
+    "yargs": "^17.7.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.21"
+  }
+}
