@@ -19,6 +19,4 @@ echo -e "${GREEN}Current version $LATEST_VERSION and Upgraded version $NEW_VERSI
 
 npm version $NEW_VERSION
 
-rm -rf ./dist && npm run build
-
 npm publish

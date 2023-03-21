@@ -28,9 +28,13 @@
   "homepage": "https://github.com/himanshumakwana/apollo-skeleton#readme",
   "dependencies": {
     "chalk": "^5.2.0",
+    "commander": "^10.0.0",
     "yargs": "^17.7.1"
   },
   "devDependencies": {
+    "@rollup/plugin-json": "^6.0.0",
+    "@std/esm": "^0.26.0",
+    "json": "^11.0.0",
     "nodemon": "^2.0.21"
   },
   "bin": {

@@ -28,6 +28,4 @@ echo -e "${GREEN}Canary version $CANARY_VERSION.${NC}"
 
 npm version "$CANARY_VERSION"
 
-rm -rf ./dist && npm run build
-
 npm publish --tag canary
