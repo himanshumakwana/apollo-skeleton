@@ -17,6 +17,7 @@ program.version(packageJson.version)
 
 program
   .command('hello')
+  .command('why')
   .description('say hello')
   .action(() => {
     console.log('Hello!');
