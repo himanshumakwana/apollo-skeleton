@@ -1,5 +1,5 @@
 {
-  "name": "apollo-skeleton",
+  "name": "@himanshumakwana/apollo-skeleton",
   "version": "1.0.2",
   "description": "This is cli util used for create apollo subgraph and supergraph skeleton",
   "main": "src/index.js",
@@ -40,5 +40,8 @@
   },
   "bin": {
     "skeleton": "src/index.js"
+  },
+  "publishConfig": {
+    "@himanshumakwana:registry": "https://npm.pkg.github.com"
   }
 }
