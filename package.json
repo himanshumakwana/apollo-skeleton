@@ -9,10 +9,7 @@
     "publish:canary": "chmod +x scripts/publish-canary.sh && scripts/publish-canary.sh",
     "publish:patch": "chmod +x scripts/patch.sh && scripts/patch.sh"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/himanshumakwana/apollo-skeleton.git"
-  },
+  "repository": "git://github.com/himanshumakwana/apollo-skeleton.git",
   "keywords": [
     "apollo",
     "apollo-subgraph",
@@ -30,10 +27,10 @@
     "commander": "^10.0.0",
     "ora": "^6.3.0",
     "un": "^0.0.0",
-    "yargs": "^17.7.1"
+    "yargs": "^17.7.1",
+    "@rollup/plugin-json": "^6.0.0"
   },
   "devDependencies": {
-    "@rollup/plugin-json": "^6.0.0",
     "@std/esm": "^0.26.0",
     "json": "^11.0.0",
     "nodemon": "^2.0.21"
