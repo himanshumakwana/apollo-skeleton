@@ -1,19 +1,15 @@
 {
-  "name": "apollo-skeleton",
-  "version": "1.0.4",
+  "name": "@himanshumakwana/apollo-skeleton",
+  "version": "1.0.3",
   "description": "This is cli util used for create apollo subgraph and supergraph skeleton",
   "main": "src/index.js",
   "type": "module",
   "scripts": {
-    "dev": "nodemon --watch src/index.js --watch src/scripts/init.sh",
-    "start": "node src/index.js",
+    "dev": "nodemon --watch src/index.js && npm install -g",
     "publish:canary": "chmod +x scripts/publish-canary.sh && scripts/publish-canary.sh",
     "publish:patch": "chmod +x scripts/patch.sh && scripts/patch.sh"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/himanshumakwana/apollo-skeleton.git"
-  },
+  "repository": "git://github.com/himanshumakwana/apollo-skeleton.git",
   "keywords": [
     "apollo",
     "apollo-subgraph",
@@ -27,10 +23,12 @@
   },
   "homepage": "https://github.com/himanshumakwana/apollo-skeleton#readme",
   "dependencies": {
-    "@rollup/plugin-json": "^6.0.0",
     "chalk": "^5.2.0",
     "commander": "^10.0.0",
-    "yargs": "^17.7.1"
+    "ora": "^6.3.0",
+    "un": "^0.0.0",
+    "yargs": "^17.7.1",
+    "@rollup/plugin-json": "^6.0.0"
   },
   "devDependencies": {
     "@std/esm": "^0.26.0",
@@ -38,6 +36,9 @@
     "nodemon": "^2.0.21"
   },
   "bin": {
-    "apollo-skeleton": "src/index.js"
+    "skeleton": "src/index.js"
+  },
+  "publishConfig": {
+    "@himanshumakwana:registry": "https://npm.pkg.github.com"
   }
 }
