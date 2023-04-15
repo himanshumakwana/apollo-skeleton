@@ -25,7 +25,7 @@ const subgraphTemplate = ({ port }) => `
   import { startStandaloneServer } from "@apollo/server/standalone"
   import gql from "graphql-tag";
 
-  const typeDefs = gql'
+  const typeDefs = gql\\\`
     extend schema
       @link(url: "https://specs.apollo.dev/federation/v2.3",
             import: ["@key", "@shareable", "@inaccessible"])
@@ -33,7 +33,7 @@ const subgraphTemplate = ({ port }) => `
       type Query {
         hello: string
       }
-  ';
+  \\\`;
   
   const resolvers = {
     Query: {
